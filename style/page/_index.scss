@@ -1,0 +1,14 @@
+div{
+    &.logo{
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 175px;
+            height: 40px;
+
+        }
+    }
+
+} 

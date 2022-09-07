@@ -1,0 +1,21 @@
+div.logo {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+div.logo img {
+  width: 175px;
+  height: 40px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
