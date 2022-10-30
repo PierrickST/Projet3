@@ -1,2 +1,538 @@
+@import"base/typography.scss";
+@import"base/_variables.scss";
 @import "page/_index.scss";
 @import "base/_normalize.scss";
+@import"component/_buttons.scss";
+@import"component/_plats.scss";
+
+//import//
+
+    .typography{
+    margin-left: 50px;
+    border-radius: 50px;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient($secondary,$primary);
+    border: none;
+    cursor: pointer;
+    
+    }
+    .typography:hover{
+        transform: scale(1.1);
+        filter: contrast(120%);
+    } 
+
+    .center{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        position: fixed;
+        inset: 0;
+        z-index: 2;
+        background-color: white;
+        opacity: 0.9;
+        animation: disparait 3s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        transform-origin: top; 
+    }
+
+    @keyframes disparait{
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0);
+        }
+    }
+
+    .ring{
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        animation: ring 3s infinite;
+    }
+
+    @keyframes ring{
+        0%{
+            transform: rotate(0deg);
+            box-shadow: 2px 5px 3px $primary;
+        }
+        5%{
+            transform: rotate(180deg);
+            box-shadow: 2px 5px 3px $secondary;
+        }
+        100%{
+            transform: rotate(360deg);
+            box-shadow: 2px 5px 3px $tertiary;
+        }
+    }
+    .ring:before{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 0 5px (255,255,255,.3);
+    }
+
+    span{
+        color: black;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 200px;
+        animation: text 4s ease-in-out linear;
+        font-family:"shrikhand" ;
+    }
+
+     
+
+   /* .lds-hourglass {
+        display: inline-block;
+       // position: relative;
+        position: fixed;
+        //width: 80px;
+       // height: 80px;
+        background-color: #ffffff;
+        height: 100vh;
+        inset: 0;
+        z-index: 1;
+        opacity: 0.9;
+        animation: disappear 1s;
+      }
+      @keyframes disapear{
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(0);
+        }
+      }
+
+      .lds-hourglass:after {
+        content: " ";
+        display: block;
+        border-radius: 50%;
+        width: 0;
+        height: 0;
+        margin: 8px;
+        box-sizing: border-box;
+        border: 32px solid red;
+        border-color: blue transparent yellow transparent;
+        animation: lds-hourglass 1.2s infinite;
+      }
+      @keyframes lds-hourglass {
+        0% {
+          transform: rotate(0);
+          animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+        50% {
+          transform: rotate(900deg);
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+        100% {
+          transform: rotate(1800deg);
+        }
+      }*/
+img{
+    object-fit: cover;
+}
+body{
+    font-family: "Roboto" ;
+}
+.fa-location-dot{
+    padding-right: 10px;
+}
+
+span.numeros{
+    border-radius: 50%;
+    width:25px;
+    height: 25px;
+    background: $primary;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    left: -12px;
+    color: white;
+}
+
+
+.fa-solid.plein{
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient($primary,$secondary);
+    position: absolute;
+    left: 1px;
+    transform: scale(1.2);
+    display: none;
+    
+    
+}
+
+.coeur{
+    
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    //padding-right: 20px;
+   // padding-bottom: 40px;
+    .fa-solid.plein:hover{display: inline-block;
+
+        
+    }
+    .creux:hover{
+     + .fa-solid.plein{
+        display: inline-block;
+        
+
+     }
+    }
+}
+
+
+.Paris{
+    text-align: center;
+    padding:15px;
+    background: rgb(230, 224, 224);
+    border-top: 3px solid rgb(194, 189, 189);
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h1{
+    padding-top: 40px;
+    padding-left: 25px;
+    margin-top: 0;
+    font-size: 27px;
+}
+
+
+
+.menu{
+   
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top:40px ;
+    padding-bottom: 60px;
+    background: rgb(239, 237, 237);
+        h1,p{
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+          
+        }
+        p{
+            font-size: 16px
+           } 
+         .button{  @extend .typography;
+         }
+        }
+        
+    .bar-nav{
+
+        ul{
+            margin-bottom: 60px;
+            list-style-type: none; 
+            //padding-left: 20px;
+            text-align: center;
+            
+            
+            li{
+                background: rgb(239, 237, 237);
+                box-shadow: 3px 3px 5px 2px #D3D2CF;
+                width: 85%;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                padding-top: 27px;
+                padding-bottom: 27px;
+                padding-right: 20px; 
+                position: relative;
+            
+            }          
+           
+        a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding-right: 0;
+       
+        
+        }
+    }
+}
+
+nav li:hover{
+    background:hsl(294, 99%, 93%)
+    
+}
+
+.fa-list-ul{
+    padding-right: 35px;
+}
+.fa-mobile-screen{
+    padding-right: 35px;
+}
+
+.fa-store{
+    padding-right: 35px;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+.resto{
+    background: rgb(239, 237, 237);
+        .presentation{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding-bottom: 55px;
+            
+            
+        }
+       
+
+       .card{
+            width: 90%;
+            height: 280px;
+            background-color: white;
+            margin: auto;
+            border-radius: 20px;
+            position: relative;
+           
+            .text{
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                background: $tertiary;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-top: 5px; ;
+                color: darken($tertiary, 40%)
+            }
+        }
+        
+        
+            
+            .card-image img{
+                border-radius: 20px 20px 0px 0px ;
+                height: 200px;
+                width: 100%;
+            }
+            
+            h2{
+                margin-top: 10px;
+                margin-bottom: 0;
+                padding-left: 13px;
+            }
+            
+            p{
+                margin: 0;
+                font-size: 20px;
+                padding-left: 13px;
+            }
+
+}  
+
+footer{
+    background-color: black;
+    color: white;
+    list-style: none;
+    h3{
+        font-family: 'shrikhand';
+        margin-top: 0;
+        padding-top: 15px;
+        padding-left: 40px;
+    }
+    
+    
+    ul{
+        list-style-type: none;
+        padding-bottom: 60px;
+        li{padding: 5px;
+        .fa-utensils{
+            padding-right: 10px;
+            
+        }
+        .fa-handshake{
+            padding-right: 10px;
+        }
+    }
+}
+}
+
+// Restos
+
+h4{
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 20px ;
+}
+p{
+    font-size: 10px;
+}
+
+.alf-img{
+    width:100% ;
+    height: 300px;
+}
+.titre-resto{
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 19px
+}
+
+.ligne{
+    text-decoration: underline;
+    width: 10px;
+    text-decoration-color: $tertiary;
+}
+h2{
+    //border-bottom: 3px solid $tertiary;
+   // text-decoration: underline;
+   // text-decoration-color: $tertiary;
+   // text-decoration-thickness: 3px;
+  // width: 50px;
+}
+.epd{
+    background: $quartenary;
+    border-radius: 30px 30px 0px 0px;
+    
+       
+    
+    .enplde{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    .carte{
+        background: white;
+        width: 90%;
+        border-radius: 10px;
+        height: 70px; 
+        &:hover{
+            .checkbox{
+                width: 70px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            p{
+                margin: 0;
+                padding-left: 10px;
+                padding-top: 10px;
+                font-size: 15px;
+
+                span{
+                    float: right;
+                    padding-right: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+.checkbox{
+    position: relative;
+    background-color: $tertiary;
+    
+}
+.carte:hover .checkbox{
+    height: 100%;
+}
+
+
+
+}
+.trans1{
+    animation: fadein 2s forwards;
+   
+}
+@-webkit-keyframes fadein{
+    to{
+        opacity: 1;
+        top: 0;
+    }
+    
+    from{
+        opacity: 0;
+        top: 1000px;
+    }
+}
+
+.enplde{
+    overflow: hidden;
+}
+.trans1{
+    animation: fadein 2s forwards;
+}
+.trans2{
+    animation: fadein 2.5s forwards;
+    //animation-delay: fadein 1s;
+    //animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.trans3{
+    animation: fadein 2.8s forwards;
+   // animation-delay: fadein 1s;
+    //animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.trans4{
+    animation: fadein 4.5s forwards;
+   // animation-delay: fadein 1s;
+}
+
+.trans5{
+animation: fadein 5s forwards;
+   // animation-delay: fadein 1s;
+}
+.trans6{
+    animation: fadein 5.5s forwards;
+   // animation-delay: fadein 1s;
+}
+.trans7{
+    animation: fadein 6.5s forwards;
+    //animation-delay: fadein 1.3s;
+}
+.trans8{
+    animation: fadein 7s forwards;
+   // animation-delay: fadein 1.3s;
+}
+.trans9{
+    animation: fadein 7.5s forwards;
+    //animation-delay: fadein 1.3s;
+}
+
+.menu-plat{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.checkbox{
+    width: 0;
+    height: 100%;
+    background-color: $tertiary;
+    display: inline-block;
+    transition: width 0.9s;
+}
+
+
