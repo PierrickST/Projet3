@@ -26,14 +26,15 @@ body {
 
 .button-resto {
   width: 150px;
-  margin-top: 30px;
-  margin-bottom: 50px;
   border-radius: 50px;
-  margin-left: 110px;
   padding: 10px;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
+}
+
+.center-button {
+  text-align: center;
 }
 
 .carte {
@@ -419,6 +420,10 @@ p {
   text-transform: uppercase;
   font-weight: lighter;
   font-size: 19px;
+  border-bottom: 3px solid #99E2D0;
+  -webkit-text-decoration-color: #99E2D0;
+          text-decoration-color: #99E2D0;
+  width: 50px;
 }
 
 .ligne {

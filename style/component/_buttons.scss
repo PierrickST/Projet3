@@ -1,11 +1,17 @@
 .button-resto{ 
     width: 150px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+   // margin-top: 30px;
+   // margin-bottom: 50px;
     border-radius: 50px;
-    margin-left: 110px;
+    //margin-left: 110px;
     padding: 10px;
     color: white;
     background: linear-gradient($secondary,$primary);
-    border: none
+    border: none;
+    
+}
+
+.center-button{
+    text-align: center;
+
 }
