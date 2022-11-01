@@ -158,53 +158,6 @@ span.text-loader {
   font-family: "shrikhand";
 }
 
-/* .lds-hourglass {
-     display: inline-block;
-    // position: relative;
-     position: fixed;
-     //width: 80px;
-    // height: 80px;
-     background-color: #ffffff;
-     height: 100vh;
-     inset: 0;
-     z-index: 1;
-     opacity: 0.9;
-     animation: disappear 1s;
-   }
-   @keyframes disapear{
-     0%{
-         transform: scale(1);
-     }
-     100%{
-         transform: scale(0);
-     }
-   }
-
-   .lds-hourglass:after {
-     content: " ";
-     display: block;
-     border-radius: 50%;
-     width: 0;
-     height: 0;
-     margin: 8px;
-     box-sizing: border-box;
-     border: 32px solid red;
-     border-color: blue transparent yellow transparent;
-     animation: lds-hourglass 1.2s infinite;
-   }
-   @keyframes lds-hourglass {
-     0% {
-       transform: rotate(0);
-       animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-     }
-     50% {
-       transform: rotate(900deg);
-       animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-     }
-     100% {
-       transform: rotate(1800deg);
-     }
-   }*/
 img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -405,6 +358,17 @@ footer ul li .fa-handshake {
   font-family: "shrikhand";
 }
 
+.fleche {
+  position: relative;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  font-size: 25px;
+  left: 30px;
+  top: 21px;
+}
+
 h4 {
   margin: 0;
   padding-left: 10px;
@@ -448,12 +412,14 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  padding-bottom: 10px;
 }
 .epd .enplde .carte {
   background: white;
   width: 90%;
   border-radius: 10px;
   height: 70px;
+  box-shadow: 3px 3px 12px -1px #7F7F7F;
 }
 .epd .enplde .carte:hover .checkbox {
   width: 70px;
