@@ -435,6 +435,7 @@ h2{
         a{
             text-decoration: none;
             color: black;
+            
             p{
                 margin: 0;
                 padding-left: 10px;
@@ -452,20 +453,47 @@ h2{
 }
 .checkbox{
     position: relative;
+    width: 0;
+    height: 100%;
     background-color: $tertiary;
+    display: grid;
+    place-items: center;
+    transition: width 0.9s;
+    border-radius: 0px 10px 10px 0px;
+     
     
 }
 .carte:hover .checkbox{
     height: 100%;
 }
 
-
-
+.menu-plat{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    gap:1px;
+    
 }
-.trans1{
-    animation: fadein 2s forwards;
+
+
+.fa-circle-check{
+   //display: none;
+   color: white;
+   font-size: 25px ;
    
 }
+
+
+.carte:hover .fa-circle-check{
+    transform: rotate(360deg);
+    display: inline-block;
+    transition: 0.5s linear;
+}
+
+
+
+}
+
 @-webkit-keyframes fadein{
     to{
         opacity: 1;
@@ -482,57 +510,41 @@ h2{
     overflow: hidden;
 }
 .trans1{
-    animation: fadein 2s forwards;
+    animation: fadein 0.5s forwards;
 }
 .trans2{
-    animation: fadein 2.5s forwards;
+    animation: fadein 1s forwards;
     //animation-delay: fadein 1s;
     //animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .trans3{
-    animation: fadein 2.8s forwards;
+    animation: fadein 1.5s forwards;
    // animation-delay: fadein 1s;
     //animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .trans4{
-    animation: fadein 4.5s forwards;
+    animation: fadein 2.5s forwards;
    // animation-delay: fadein 1s;
 }
 
 .trans5{
-animation: fadein 5s forwards;
+animation: fadein 3s forwards;
    // animation-delay: fadein 1s;
 }
 .trans6{
-    animation: fadein 5.5s forwards;
+    animation: fadein 3.5s forwards;
    // animation-delay: fadein 1s;
 }
 .trans7{
-    animation: fadein 6.5s forwards;
+    animation: fadein 5.5s forwards;
     //animation-delay: fadein 1.3s;
 }
 .trans8{
-    animation: fadein 7s forwards;
+    animation: fadein 5.8s forwards;
    // animation-delay: fadein 1.3s;
 }
 .trans9{
-    animation: fadein 7.5s forwards;
+    animation: fadein 6s forwards;
     //animation-delay: fadein 1.3s;
 }
-
-.menu-plat{
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.checkbox{
-    width: 0;
-    height: 100%;
-    background-color: $tertiary;
-    display: inline-block;
-    transition: width 0.9s;
-}
-
-
