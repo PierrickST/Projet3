@@ -25,9 +25,11 @@ body {
 }
 
 .button-resto {
-  width: 150px;
+  width: 160px;
+  margin-top: 30px;
+  margin-bottom: 50px;
   border-radius: 50px;
-  padding: 10px;
+  padding: 15px;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
@@ -397,6 +399,10 @@ footer ul li .fa-utensils {
 }
 footer ul li .fa-handshake {
   padding-right: 10px;
+}
+
+.alafrancaise {
+  font-family: "shrikhand";
 }
 
 h4 {
