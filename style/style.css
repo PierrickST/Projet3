@@ -39,6 +39,11 @@ body {
   text-align: center;
 }
 
+.button-resto:hover {
+  transform: scale(1.1);
+  filter: contrast(120%);
+}
+
 .carte {
   position: relative;
   top: 15 0px;
@@ -422,6 +427,7 @@ p {
 }
 .epd .enplde .carte .nom-plat {
   width: 100%;
+  justify-content: space-between;
 }
 .epd .enplde .carte:hover .checkbox {
   width: 70px;
@@ -440,6 +446,15 @@ p {
   float: right;
   padding-right: 20px;
   font-weight: bold;
+}
+.epd .prix {
+  padding: 15px;
+}
+.epd .menu-plat p {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .epd .checkbox {
   position: relative;
@@ -529,4 +544,10 @@ p {
 .trans9 {
   -webkit-animation: fadein 6s forwards;
           animation: fadein 6s forwards;
+}
+
+@media (min-width: 899px) {
+  .desktop {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */

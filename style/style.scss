@@ -405,7 +405,8 @@ p{
         height: 70px; 
         box-shadow: 3px 3px 12px -1px #7F7F7F;
         .nom-plat{
-            width:100% ;
+            width:100%;
+            justify-content: space-between;
         }
         
         &:hover{
@@ -422,15 +423,28 @@ p{
                 padding-left: 10px;
                 padding-top: 10px;
                 font-size: 15px;
+                
+                
 
                 span{
                     float: right;
                     padding-right: 20px;
                     font-weight: bold;
                 }
+            
             }
         }
     }
+}
+
+.prix{
+padding: 15px;
+}
+.menu-plat p{
+    flex: 1;
+    white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
 }
 
 .checkbox{
@@ -529,4 +543,11 @@ animation: fadein 3s forwards;
 .trans9{
     animation: fadein 6s forwards;
     //animation-delay: fadein 1.3s;
+}
+
+@media(min-width: 899px){
+
+.desktop{
+    display: flex;
+}
 }
