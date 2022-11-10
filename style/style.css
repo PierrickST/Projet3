@@ -83,8 +83,8 @@ a {
   opacity: 0.9;
   -webkit-animation: disparait 1s;
           animation: disparait 1s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   transform-origin: top;
@@ -264,6 +264,9 @@ h1 {
   padding-right: 20px;
   position: relative;
 }
+.bar-nav ul li:hover i {
+  color: #9356DC;
+}
 .bar-nav ul a {
   text-decoration: none;
   color: black;
@@ -375,16 +378,11 @@ footer ul li .fa-handshake {
   display: inline-block;
 }
 
-/*.menu-title{
-    font-family: "shrikhand" ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 20px;
-    position: relative;
-} 
+.menu-title {
+  font-family: "shrikhand";
+}
 
-
+/*
     .coeur-resto{
 
         .fa-solid.plein-resto:hover{display: inline-block;

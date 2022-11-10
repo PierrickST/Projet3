@@ -35,7 +35,7 @@
         background-color: white;
         opacity: 0.9;
         animation: disparait 1s;
-        animation-delay: 2s;
+        animation-delay: 0s;
         animation-fill-mode: forwards;
         transform-origin: top; 
     }
@@ -207,6 +207,9 @@ h1{
                 padding-bottom: 27px;
                 padding-right: 20px; 
                 position: relative;
+                &:hover i{
+                    color:$primary;
+                }
             
             }          
            
@@ -347,16 +350,12 @@ footer{
     }
 }
 
-/*.menu-title{
+.menu-title{
     font-family: "shrikhand" ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 20px;
-    position: relative;
+    
 } 
    
-
+/*
     .coeur-resto{
     
         .fa-solid.plein-resto:hover{display: inline-block;
