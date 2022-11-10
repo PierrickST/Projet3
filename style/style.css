@@ -35,6 +35,11 @@ body {
   border: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .center-button {
   text-align: center;
 }
@@ -358,10 +363,53 @@ footer ul li .fa-handshake {
   padding-right: 10px;
 }
 
-.alafrancaise {
-  font-family: "shrikhand";
+.coeur-resto {
+  position: absolute;
+  right: 30px;
+  top: 400px;
+}
+.coeur-resto .fa-solid.plein:hover {
+  display: inline-block;
+}
+.coeur-resto .creux:hover + .fa-solid.plein {
+  display: inline-block;
 }
 
+/*.menu-title{
+    font-family: "shrikhand" ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    position: relative;
+} 
+
+
+    .coeur-resto{
+
+        .fa-solid.plein-resto:hover{display: inline-block;
+            justify-content: space-between;
+
+
+
+        }
+        .creux:hover{
+         + .fa-solid.plein-resto{
+            display: inline-block;
+
+
+         }
+        }
+    }
+    .fa-solid.plein-resto{
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient($primary,$secondary);
+        position: absolute;
+        left: 1px;
+        transform: scale(1.2);
+        display: none;
+    }*/
 .fleche {
   position: relative;
 }
@@ -448,7 +496,9 @@ p {
   font-weight: bold;
 }
 .epd .prix {
-  padding: 15px;
+  padding: 11px;
+  display: flex;
+  align-items: flex-end;
 }
 .epd .menu-plat p {
   flex: 1;
@@ -546,8 +596,36 @@ p {
           animation: fadein 6s forwards;
 }
 
-@media (min-width: 899px) {
+@media (min-width: 768px) {
+  .fonctionnement-dk {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+  .bar-nav ul {
+    margin: 15px;
+  }
+  .titre-footer {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .gap {
+    display: flex;
+    justify-content: space-around;
+  }
+  .resto .presentation {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 30px;
+  }
   .desktop {
     display: flex;
+  }
+  .desktop .conteneur-desktop {
+    width: 33%;
   }
 }/*# sourceMappingURL=style.css.map */

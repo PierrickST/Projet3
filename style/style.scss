@@ -330,10 +330,59 @@ footer{
 }
 
 // Restos
+.coeur-resto{
+    position: absolute;
+    right: 30px;
+    top:400px;
+    .fa-solid.plein:hover{display: inline-block;
 
-.alafrancaise{
-    font-family: "shrikhand" ;
+        
+    }
+    .creux:hover{
+     + .fa-solid.plein{
+        display: inline-block;
+        
+
+     }
+    }
 }
+
+/*.menu-title{
+    font-family: "shrikhand" ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    position: relative;
+} 
+   
+
+    .coeur-resto{
+    
+        .fa-solid.plein-resto:hover{display: inline-block;
+            justify-content: space-between;
+            
+    
+            
+        }
+        .creux:hover{
+         + .fa-solid.plein-resto{
+            display: inline-block;
+            
+    
+         }
+        }
+    }
+    .fa-solid.plein-resto{
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient($primary,$secondary);
+        position: absolute;
+        left: 1px;
+        transform: scale(1.2);
+        display: none;
+    }*/
+
 .fleche{
     position: relative;
     
@@ -438,7 +487,9 @@ p{
 }
 
 .prix{
-padding: 15px;
+padding: 11px;
+display: flex;
+align-items: flex-end;
 }
 .menu-plat p{
     flex: 1;
@@ -545,9 +596,46 @@ animation: fadein 3s forwards;
     //animation-delay: fadein 1.3s;
 }
 
-@media(min-width: 899px){
+@media(min-width: 768px){
+//menu
+.fonctionnement-dk{
+    display: flex;
+    //justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+   // margin-bottom: 30px;
+}
+h1{
+    margin-bottom: 0;
+}
+.bar-nav{
+    ul{
+        margin: 15px;}
+}
+.titre-footer{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.gap{
+    display: flex;
+    justify-content: space-around;
+}
 
+.resto{
+    .presentation{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 30px;
+}
+}
+
+//resto
 .desktop{
     display: flex;
+    //flex-direction: row;
+    .conteneur-desktop{
+        width: 33%;
+    }
 }
 }
