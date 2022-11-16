@@ -35,7 +35,7 @@
         background-color: white;
         opacity: 0.9;
         animation: disparait 1s;
-        animation-delay: 0s;
+        animation-delay: 5s;
         animation-fill-mode: forwards;
         transform-origin: top; 
     }
@@ -54,7 +54,7 @@
         height: 200px;
         width: 200px;
         border-radius: 50%;
-        animation: ring 3s infinite;
+        animation: ring 3s linear infinite;
     }
 
     @keyframes ring{
@@ -62,7 +62,7 @@
             transform: rotate(0deg);
             box-shadow: 2px 5px 3px $primary;
         }
-        5%{
+        50%{
             transform: rotate(180deg);
             box-shadow: 2px 5px 3px $secondary;
         }
@@ -565,17 +565,17 @@ align-items: flex-end;
 }
 
 .trans3{
-    animation: fadein 1.5s forwards;
+    animation: fadein 1.3s forwards;
    // animation-delay: fadein 1s;
     //animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 .trans4{
-    animation: fadein 2.5s forwards;
+    animation: fadein 2.8s forwards;
    // animation-delay: fadein 1s;
 }
 
 .trans5{
-animation: fadein 3s forwards;
+animation: fadein 3.2s forwards;
    // animation-delay: fadein 1s;
 }
 .trans6{
@@ -583,15 +583,15 @@ animation: fadein 3s forwards;
    // animation-delay: fadein 1s;
 }
 .trans7{
-    animation: fadein 5.5s forwards;
+    animation: fadein 4.1s forwards;
     //animation-delay: fadein 1.3s;
 }
 .trans8{
-    animation: fadein 5.8s forwards;
+    animation: fadein 4.9s forwards;
    // animation-delay: fadein 1.3s;
 }
 .trans9{
-    animation: fadein 6s forwards;
+    animation: fadein 5.3s forwards;
     //animation-delay: fadein 1.3s;
 }
 

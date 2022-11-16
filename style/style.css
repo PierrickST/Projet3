@@ -83,8 +83,8 @@ a {
   opacity: 0.9;
   -webkit-animation: disparait 1s;
           animation: disparait 1s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   transform-origin: top;
@@ -112,8 +112,8 @@ a {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  -webkit-animation: ring 3s infinite;
-          animation: ring 3s infinite;
+  -webkit-animation: ring 3s linear infinite;
+          animation: ring 3s linear infinite;
 }
 
 @-webkit-keyframes ring {
@@ -121,7 +121,7 @@ a {
     transform: rotate(0deg);
     box-shadow: 2px 5px 3px #9356DC;
   }
-  5% {
+  50% {
     transform: rotate(180deg);
     box-shadow: 2px 5px 3px #FF79DA;
   }
@@ -136,7 +136,7 @@ a {
     transform: rotate(0deg);
     box-shadow: 2px 5px 3px #9356DC;
   }
-  5% {
+  50% {
     transform: rotate(180deg);
     box-shadow: 2px 5px 3px #FF79DA;
   }
@@ -560,18 +560,18 @@ p {
 }
 
 .trans3 {
-  -webkit-animation: fadein 1.5s forwards;
-          animation: fadein 1.5s forwards;
+  -webkit-animation: fadein 1.3s forwards;
+          animation: fadein 1.3s forwards;
 }
 
 .trans4 {
-  -webkit-animation: fadein 2.5s forwards;
-          animation: fadein 2.5s forwards;
+  -webkit-animation: fadein 2.8s forwards;
+          animation: fadein 2.8s forwards;
 }
 
 .trans5 {
-  -webkit-animation: fadein 3s forwards;
-          animation: fadein 3s forwards;
+  -webkit-animation: fadein 3.2s forwards;
+          animation: fadein 3.2s forwards;
 }
 
 .trans6 {
@@ -580,18 +580,18 @@ p {
 }
 
 .trans7 {
-  -webkit-animation: fadein 5.5s forwards;
-          animation: fadein 5.5s forwards;
+  -webkit-animation: fadein 4.1s forwards;
+          animation: fadein 4.1s forwards;
 }
 
 .trans8 {
-  -webkit-animation: fadein 5.8s forwards;
-          animation: fadein 5.8s forwards;
+  -webkit-animation: fadein 4.9s forwards;
+          animation: fadein 4.9s forwards;
 }
 
 .trans9 {
-  -webkit-animation: fadein 6s forwards;
-          animation: fadein 6s forwards;
+  -webkit-animation: fadein 5.3s forwards;
+          animation: fadein 5.3s forwards;
 }
 
 @media (min-width: 768px) {
