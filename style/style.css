@@ -594,7 +594,7 @@ p {
           animation: fadein 5.3s forwards;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .fonctionnement-dk {
     display: flex;
     gap: 20px;
@@ -617,13 +617,19 @@ p {
   }
   .resto .presentation {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 30px;
+  }
+  .resto .presentation .card {
+    width: 45%;
   }
   .desktop {
     display: flex;
   }
   .desktop .conteneur-desktop {
-    width: 33%;
+    width: 34%;
+  }
+  footer h3 {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

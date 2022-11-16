@@ -595,7 +595,9 @@ animation: fadein 3.2s forwards;
     //animation-delay: fadein 1.3s;
 }
 
-@media(min-width: 768px){
+//responsive
+
+@media(min-width: 1000px){
 //menu
 .fonctionnement-dk{
     display: flex;
@@ -624,8 +626,11 @@ h1{
 .resto{
     .presentation{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 30px;
+    .card{
+        width: 45%;
+    }
 }
 }
 
@@ -634,7 +639,17 @@ h1{
     display: flex;
     //flex-direction: row;
     .conteneur-desktop{
-        width: 33%;
+        width: 34%;
     }
 }
+
+footer{
+    h3{
+        text-align: center;
+    }
+    
 }
+
+
+}
+
