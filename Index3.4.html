@@ -4,105 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> La pallette du goût</title>
+    <link rel="stylesheet" href="style/style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>A la Française</title>
+   
 </head>
 <body>
     <Header>
-        <div class="logo"><img src="images/ohmyfood.png" alt="logo">
+        <div class="fleche">
+            <i class="fa-solid fa-arrow-left"></i>
+            <div class="logo"></i><img src="images/ohmyfood.png" alt="logo">
         </div>
-        <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La pallette du goût">
+        </div>
+        <img class="alf-img" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la Française">
     </Header>
-    <Section>
-        <h1>La pallette du goût</h1>
-    <main>
-        <section>
-            <h2>Entrées</h2>
-            <div>
-                <a href="#">
-                    <div class="body"></div>
-                    <div class="name"></div>
-                    <p>Fricassée d'escargot<br>
-                    Au piment d'espelette 25€</p>
+    <Section class="epd">
+        
+        <div class="menu-title">
+        <h1>A la Française</h1>
+        <div class="coeur-resto"><i class="fa-regular fa-heart fa-2x creux"></i>
+            <i class="fa-solid fa-heart fa-2x plein"></i>
+        </div>
+        </div>
+        <div class="desktop">
+            <div class="conteneur-desktop">
+            <h2 class="titre-resto">Entrées</h2>
+        <div class="enplde">
+            <div class="carte trans1">
+                <a class="menu-plat" href="#">
+                    <div class="nom-plat"><h4> Tartare de poulpe acidulé</h4>
+                   <p>Au zeste d'orange <span> 25€</span> </p>
+                    </div>
+                   <div class="checkbox">
+                    <i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </a>
             </div>
-            <div>
-                <a href="#">
-                    <div class="body"></div>
-                    <div class="name"></div>
-                    <p>Foie gras de canard mi-cuit <br>
-                    Et ses copeaux de truffes noire 35€</p>
+            <div class="carte trans2">
+                <a class="menu-plat" href="#">
+                    <div class="nom-plat"><h4>Velouté de légumes d'antan </h4>
+                    <p>Carotte, panais, topinanbour<span>35€</span> </p>
+                    </div>
+                    <div class="checkbox">
+                        <i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </a>
             </div>
-            <div>
-                <a href="#">
-                    <div class="body"></div>
-                    <div class="name"></div>
-                    <p>Oeuf aux plat <br>
-                    Assaisonné à la truffe sur lit de... 20€</p>
+            <div class="carte trans3 ">
+                <a class="menu-plat" href="#">
+                    <div class="nom-plat"> <h4> Soupe à l'oignon </h4>
+                    <p> Revisitée <span>20€</span></p>
+                </div>
+                    <div class="checkbox">
+                        <i class="fa-sharp fa-solid fa-circle-check"></i></div>
                 </a>
             </div>
-            <h2>Plats</h2>
-            <div>
-                <a href="#">
-                    <div class="body"></div>
-                    <div class="name"></div>
-                    <p>Filet de boeuf aux herbes <br>
-                    Accompagné de sa ribambelles de légu... 40€</p>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <div class="body"></div>
-                    <div class="name"></div>
-                    <p>Parmentier de queue de boeuf<br>
-                        A la truffe noire sur sa purée de panais 35€</p>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <div class="body"></div>
-                    <div class="name"></div>
-                    <p> Filet de turbot <br>
-                    Aux agrumes 44€</p>
-                </a>
-            </div>
-            <h2>Desserts</h2>
-            <div>
-                <a href="#">
-                    <div class="body"></div>
-                    <div class="name"></div>
-                    <p>Paris-Brest <br>
-                    Revisité 18€</p>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <div class="body"></div>
-                    <div class="name"></div>
-                    <p>Macaron au chocolat d'exeption <br>
-                    Et glace à la vanille de Madagascar 22€</p>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <div class="body"></div>
-                    <div class="name"></div>
-                    <p>Mousse au chocolat<br>
-                    Au piment d'espelette et à la truffe noire 23€</p>
-                </a>
-            </div>
+        </div>
+    </div>
 
-            <button class="button">Commander</button>
+    <div class="conteneur-desktop">
+            <h2 class="titre-resto">Plats</h2>
+            <div class="enplde">
+            <div class="carte trans4">
+                <a class="menu-plat" href="#">
+                    <div class="nom-plat"><h4> Saint Jacques </h4>
+                    <p>Accompagnées d'une purée de panais</p> 
+                </div>
+                <div class="prix">40€</div>
+                    <div class="checkbox">
+                        <i class="fa-sharp fa-solid fa-circle-check"></i></div>
 
-        </section>
-    </main>
+                </a>
+            </div>
+            <div class="carte trans5">
+                <a class="menu-plat" href="#">
+                    <div class="nom-plat"> <h4> de canard </h4>
+                   <p> Et parmentier de pommes de terres <span>35€</span></p>
+                </div>
+                   <div class="checkbox">
+                    <i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                </a>
+            </div>
+            <div class="carte trans6">
+                <a class="menu-plat" href="#">
+                    <div class="nom-plat"><h4>Pigeonneau d'Ile et Villaine </h4>
+                   <p> Sur son lit de gnocchis aux légumes <span>44€</span> </p>
+                </div>
+                   <div class="checkbox">
+                    <i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                </a>
+            </div>
+            </div>
+            </div>
+            <div class="conteneur-desktop">
+            <h2 class="titre-resto">Desserts</h2>
+            <div class="enplde">
+            <div class="carte trans7">
+                <a class="menu-plat" href="#">
+                    <div class="nom-plat"> <h4>Pétales de viollettes glacés </h4>
+                    <p> purée de noisettes <span>18€</span></p>
+                </div>
+                    <div class="checkbox">
+                        <i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                </a>
+            </div>
+            <div class="carte trans8">
+                <a class="menu-plat" href="#">
+                    <div class="nom-plat"><h4>Fondant au chocolat </h4>
+                   <p> Revisité <span> 22€</span> </p>
+                </div>
+                   <div class="checkbox">
+                    <i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                </a>
+            </div>
+            <div class="carte trans9">
+                <a class="menu-plat" href="#">
+                    <div class="nom-plat"><h4>Millefeuille croustillant </h4>
+                    <p> Et pâte d'amande <span> 23€</span></p>
+                </div>
+                    <div class="checkbox">
+                        <i class="fa-sharp fa-solid fa-circle-check"></i></div>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+            <div class="center-button">
+            <button class="button-resto">Commander</button>
+            </div>
+        
     </Section>
     <footer>
         <div>
-            <img src="images/ohmyfood.png" alt="logo"/>
-            <ul>
-               <li><a href="#"></a>Proposer un restaurant</li>
-               <li><a href="#"></a>Devenir partenaire</li>
+            <h3>ohmyfood</h3>
+            <ul class="gap">
+               <li><a href="#"></a><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+               <li><a href="#"></a><i class="fa-solid fa-handshake fa-rotate-by" style="--fa-rotate-angle: -45deg;"></i></i>Devenir partenaire</li>
                <li><a href="#"></a>Mentions légales</li>
                <li><a href="#"></a>Contact</li>
             </ul>
