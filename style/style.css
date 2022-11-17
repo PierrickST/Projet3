@@ -494,17 +494,23 @@ p {
   padding-right: 20px;
   font-weight: bold;
 }
-.epd .prix {
-  padding: 11px;
-  display: flex;
-  align-items: flex-end;
-  font-weight: bold;
+.epd .menu-plat h4 {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .epd .menu-plat p {
   width: 250px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.epd .menu-plat .prix {
+  padding: 11px;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
 }
 .epd .checkbox {
   position: relative;

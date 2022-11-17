@@ -485,17 +485,28 @@ p{
     }
 }
 
-.prix{
-padding: 11px;
-display: flex;
-align-items: flex-end;
-font-weight: bold;
-}
-.menu-plat p{
+
+.menu-plat {
+
+    h4{
+        width: 250px;
+    white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+    }
+   p{
     width: 250px;
     white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+}
+.prix{
+    padding: 11px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    }
 }
 
 .checkbox{
