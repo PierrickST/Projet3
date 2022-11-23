@@ -115,6 +115,9 @@ a {
   width: 100%;
   justify-content: space-between;
 }
+.epd .enplde .carte:hover .nom-plat {
+  width: 70%;
+}
 .epd .enplde .carte:hover .checkbox {
   width: 70px;
 }
