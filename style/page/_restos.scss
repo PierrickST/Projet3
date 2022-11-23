@@ -1,0 +1,89 @@
+.resto{
+    background: rgb(239, 237, 237);
+        .presentation{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding-bottom: 55px; 
+        }
+        
+       
+       .card{
+            width: 90%;
+            height: 280px;
+            background-color: white;
+            margin: auto;
+            border-radius: 20px;
+            position: relative;
+           
+            .text{
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                background: $tertiary;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-top: 5px; ;
+                color: darken($tertiary, 40%)
+            }
+        }
+                    
+            .card-image img{
+                border-radius: 20px 20px 0px 0px ;
+                height: 200px;
+                width: 100%;
+            }
+            
+            h2{
+                margin-top: 10px;
+                margin-bottom: 0;
+                padding-left: 13px;
+            }
+            
+            p{
+                margin: 0;
+                font-size: 20px;
+                padding-left: 13px;
+            }
+
+}  
+
+.menu-title{
+    font-family: "shrikhand" ;
+} 
+   
+
+
+h4{
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 20px ;
+}
+p{
+    font-size: 10px;
+}
+
+.alf-img{
+    width:100% ;
+    height: 300px;
+}
+.titre-resto{
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 19px;
+    border-bottom: 3px solid $tertiary;
+    text-decoration-color: $tertiary;
+    width: 50px;
+}
+.ligne{
+    text-decoration: underline;
+    width: 10px;
+    text-decoration-color: $tertiary;
+}
+
+

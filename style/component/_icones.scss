@@ -1,0 +1,90 @@
+.fa-location-dot{
+    padding-right: 10px;
+}
+
+span.numeros{
+    border-radius: 50%;
+    width:25px;
+    height: 25px;
+    background: $primary;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    left: -12px;
+    color: white;
+}
+
+.fa-solid.plein{
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient($primary,$secondary);
+    position: absolute;
+    left: 1px;
+    transform: scale(1.2);
+    display: none;    
+}
+
+.coeur{
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    .fa-solid.plein:hover{display: inline-block;   
+    }
+    .creux:hover{
+     + .fa-solid.plein{
+        display: inline-block;
+     }
+    }
+}
+
+.fa-list-ul{
+    padding-right: 35px;
+}
+.fa-mobile-screen{
+    padding-right: 15px;
+}
+
+.fa-store{
+    padding-right: 35px;
+}
+.coeur-resto{
+    position: absolute;
+    right: 30px;
+    top:40px;
+    .fa-solid.plein:hover{display: inline-block;   
+    }
+    .creux:hover{
+     + .fa-solid.plein{
+        display: inline-block;
+     }
+    }
+}
+
+.fleche{
+    position: relative;
+    
+}
+
+.fa-arrow-left{
+    position: absolute;
+    font-size: 25px;
+    left: 30px;
+    top: 21px;
+    color: black;
+}
+
+.checkbox{
+    position: relative;
+    width: 0;
+    height: 100%;
+    background-color: $tertiary;
+    display: grid;
+    place-items: center;
+    transition: width 0.9s;
+    border-radius: 0px 10px 10px 0px;
+     overflow: hidden;
+    
+}
+.carte:hover .checkbox{
+    height: 100%;
+}
