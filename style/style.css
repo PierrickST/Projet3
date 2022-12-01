@@ -171,6 +171,13 @@ a {
   transition: 0.5s linear;
 }
 
+.ligne {
+  text-decoration: underline;
+  width: 10px;
+  -webkit-text-decoration-color: #99E2D0;
+          text-decoration-color: #99E2D0;
+}
+
 @-webkit-keyframes fadein {
   to {
     opacity: 1;
@@ -200,6 +207,11 @@ a {
           animation: fadein 1.3s forwards;
 }
 
+.transsup {
+  -webkit-animation: fadein 1.6s forwards;
+          animation: fadein 1.6s forwards;
+}
+
 .trans4 {
   -webkit-animation: fadein 2.8s forwards;
           animation: fadein 2.8s forwards;
@@ -221,13 +233,13 @@ a {
 }
 
 .trans8 {
-  -webkit-animation: fadein 4.9s forwards;
-          animation: fadein 4.9s forwards;
+  -webkit-animation: fadein 4.6s forwards;
+          animation: fadein 4.6s forwards;
 }
 
 .trans9 {
-  -webkit-animation: fadein 5.3s forwards;
-          animation: fadein 5.3s forwards;
+  -webkit-animation: fadein 5s forwards;
+          animation: fadein 5s forwards;
 }
 
 .fa-location-dot {
@@ -569,13 +581,6 @@ p {
   -webkit-text-decoration-color: #99E2D0;
           text-decoration-color: #99E2D0;
   width: 50px;
-}
-
-.ligne {
-  text-decoration: underline;
-  width: 10px;
-  -webkit-text-decoration-color: #99E2D0;
-          text-decoration-color: #99E2D0;
 }
 
 @media (min-width: 1000px) {
