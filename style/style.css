@@ -129,7 +129,7 @@ a {
   margin: 0;
   padding-left: 10px;
   padding-top: 10px;
-  font-size: 15px;
+  font-size: 14px;
 }
 .epd .enplde .carte a p span {
   float: right;
@@ -137,16 +137,7 @@ a {
   font-weight: bold;
 }
 .epd .menu-plat h4 {
-  width: 250px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.epd .menu-plat p {
-  width: 250px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 17px;
 }
 .epd .menu-plat .prix {
   padding: 11px;
@@ -169,6 +160,19 @@ a {
   transform: rotate(360deg);
   display: inline-block;
   transition: 0.5s linear;
+}
+.epd .carte:hover h4 {
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 17px;
+}
+.epd .carte:hover p {
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ligne {

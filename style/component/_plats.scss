@@ -41,7 +41,7 @@
                 margin: 0;
                 padding-left: 10px;
                 padding-top: 10px;
-                font-size: 15px;
+                font-size: 14px;
                 span{
                     float: right;
                     padding-right: 20px;
@@ -54,21 +54,14 @@
 }
 
 
+ 
+
 .menu-plat {
-
     h4{
-        width: 250px;
-    white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-
+        font-size: 17px;;
     }
-   p{
-    width: 250px;
-    white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-}
+
+    
 .prix{
     padding: 11px;
     display: flex;
@@ -97,6 +90,23 @@
     transform: rotate(360deg);
     display: inline-block;
     transition: 0.5s linear;
+}
+.carte:hover{
+    h4{
+        width: 220px;
+    white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 17px;
+
+    }
+   p{
+    width: 220px;
+    white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+}
+
 }
 }
 .ligne{
