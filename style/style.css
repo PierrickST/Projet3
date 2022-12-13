@@ -48,7 +48,7 @@ h1 {
   padding-top: 40px;
   padding-left: 25px;
   margin-top: 0;
-  font-size: 27px;
+  font-size: 1.3rem;
 }
 
 .typography, .menu .button {
@@ -112,11 +112,11 @@ a {
   box-shadow: 3px 3px 12px -1px #7F7F7F;
 }
 .epd .enplde .carte .nom-plat {
-  width: 100%;
+  width: calc(100% - 50px);
   justify-content: space-between;
 }
 .epd .enplde .carte:hover .nom-plat {
-  width: 70%;
+  width: calc(100% - 120px) !important;
 }
 .epd .enplde .carte:hover .checkbox {
   width: 70px;
@@ -137,14 +137,14 @@ a {
   font-weight: bold;
 }
 .epd .menu-plat h4 {
-  width: 270px;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 17px;
 }
 .epd .menu-plat p {
-  width: 270px;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -172,14 +172,14 @@ a {
   transition: 0.5s linear;
 }
 .epd .carte:hover h4 {
-  width: 220px;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 17px;
 }
 .epd .carte:hover p {
-  width: 220px;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
