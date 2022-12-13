@@ -57,9 +57,22 @@
  
 
 .menu-plat {
+    
     h4{
-        font-size: 17px;;
+        width: 270px;
+    white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 17px;
+
     }
+   p{
+    width: 270px;
+    white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+}
+
 
     
 .prix{

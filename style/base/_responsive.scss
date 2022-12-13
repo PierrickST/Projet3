@@ -31,6 +31,8 @@
             width: 45%;
         }
     }
+    
+    
     }
     
     //resto
@@ -40,6 +42,24 @@
             width: 34%;
         }
     }
+    .menu-plat {
+    
+        h4{
+            width: 250px;
+        white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 17px;
+    
+        }
+       p{
+        width: 250px;
+        white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+    }
+}
+
     
     footer{
         h3{

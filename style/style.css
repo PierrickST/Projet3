@@ -137,7 +137,17 @@ a {
   font-weight: bold;
 }
 .epd .menu-plat h4 {
+  width: 270px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 17px;
+}
+.epd .menu-plat p {
+  width: 270px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .epd .menu-plat .prix {
   padding: 11px;
@@ -621,6 +631,19 @@ p {
   }
   .desktop .conteneur-desktop {
     width: 34%;
+  }
+  .menu-plat h4 {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 17px;
+  }
+  .menu-plat p {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   footer h3 {
     text-align: center;
